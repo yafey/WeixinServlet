@@ -6,7 +6,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
 /**
- * Ğ£Ñé
+ * æ ¡éªŒ
  * @author twx
  *
  */
@@ -15,9 +15,9 @@ public class CheckUtil {
 	
 	public static boolean checkSignature(String signature,String timestamp,String nonce){
 		String[] arr = new String[]{TOKEN,timestamp,nonce};
-		//ÅÅĞò
+		//æ’åº
 		Arrays.sort(arr);
-		//Éú³É×Ö·û´®
+		//ç”Ÿæˆå­—ç¬¦ä¸²
 		StringBuffer sb = new StringBuffer();
 		for(int i=0;i<arr.length;i++){
 			sb.append(arr[i]);
@@ -29,7 +29,7 @@ public class CheckUtil {
 	}
 	
 	/**
-	 * sha1¼ÓÃÜ
+	 * sha1åŠ å¯†
 	 * @param decript
 	 * @return
 	 */
